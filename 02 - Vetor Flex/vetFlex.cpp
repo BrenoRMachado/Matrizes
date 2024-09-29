@@ -22,12 +22,32 @@ VetFlex :: ~VetFlex()
 int VetFlex :: detind(int indice)
 {
     if ( start <= indice && indice <= end )
-    {
-        
-    }
+        return indice - 1;
+    else 
+        return -1;
+    
 }
 // ------------------------------------------------------------------
 
 // getters e setters ------------------------------------------------
+float VetFlex :: get(int indice)
+{
+    int i = detind(indice);
+    if ( i != -1)
+        return vet[i];
+    else
+        cout << "indice invalido"<< endl;
+        exit(1);
 
+}
+
+void VetFlex :: set(int indice, float valor)
+{
+    int i = detind(indice);
+    if(i != -1)
+        vet[i] = valor;
+    else 
+        cout << "indice inválido" <<endl;
+        exit(1);
+}
 // -----------------------------------------------------------------
