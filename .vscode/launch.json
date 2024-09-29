@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Breno/Documents/GitHub/Matrizes/01",
-      "program": "c:/Users/Breno/Documents/GitHub/Matrizes/01/build/Debug/outDebug",
+      "cwd": "c:/Users/Breno/Documents/GitHub/Matrizes/01 - Vetor Unidimensional",
+      "program": "c:/Users/Breno/Documents/GitHub/Matrizes/01 - Vetor Unidimensional/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
