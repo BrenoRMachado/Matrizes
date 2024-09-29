@@ -21,8 +21,10 @@ VetFlex :: ~VetFlex()
 // métodos ----------------------------------------------------------
 int VetFlex :: detind(int indice)
 {
+    cout << "teste 4" << endl;
+
     if ( start <= indice && indice <= end )
-        return indice - 1;
+        return indice - start;
     else 
         return -1;
     
@@ -32,6 +34,7 @@ int VetFlex :: detind(int indice)
 // getters e setters ------------------------------------------------
 float VetFlex :: get(int indice)
 {
+    cout << "teste 5" <<endl;
     int i = detind(indice);
     if ( i != -1)
         return vet[i];
@@ -43,6 +46,7 @@ float VetFlex :: get(int indice)
 
 void VetFlex :: set(int indice, float valor)
 {
+    cout << "teste 6" <<endl;
     int i = detind(indice);
     if(i != -1)
         vet[i] = valor;
