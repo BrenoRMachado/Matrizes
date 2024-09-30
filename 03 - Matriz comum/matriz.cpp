@@ -44,9 +44,9 @@ Matriz :: ~Matriz()
 
 // metodos --------------------------------------------------------------------------------
 
-bool Matriz :: verificaIndices(int tamp, int tamf)
+bool Matriz :: verificaIndices(int indi, int indj)
 {
-    if(tamp > 0 && tamf > 0)
+    if(indi > 0 && indj > 0 && indi < p && indj <f)
         return true;
     else
         return false;
@@ -58,10 +58,14 @@ bool Matriz :: verificaIndices(int tamp, int tamf)
 
 float Matriz :: get(int indi, int indj)
 {   
-    return mat[indi][indj];
+    if(verificaIndices(indi,indj))
+        return mat[indi][indj];
+    else
+        cout << "Indice inválido"<<endl;
 }
 void Matriz :: set(int indi, int indj, float valor)
-{
-    mat[indi][indj] = valor;
+{   
+    if(verificaIndices(indi,indj))
+        mat[indi][indj] = valor;
 }
 // ----------------------------------------------------------------------------------------
