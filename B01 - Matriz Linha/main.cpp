@@ -22,7 +22,7 @@ int main ()
     }
     for ( int i = 0 ; i<m ; i++)
     {
-        for(int j = 0 ; i<n ; j++)
+        for(int j = 0 ; j<n ; j++)
         {
             float valor = mat.get(i,j);
             cout << valor << "\t";
