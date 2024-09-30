@@ -22,7 +22,13 @@ class Matriz
     // tamf = tamanho dos vetores filhos
 
     // -------------------------------------------------------------------
-    
+
+    // metodos -----------------------------------------------------------
+
+    // recebe a matriz original e imprime a transposta
+    void transposta(Matriz *mat);
+    // -------------------------------------------------------------------
+
     // getters e setters -------------------------------------------------
 
     float get(int indi, int indj);

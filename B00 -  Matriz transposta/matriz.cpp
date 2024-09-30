@@ -52,6 +52,27 @@ bool Matriz :: verificaIndices(int indi, int indj)
         return false;
 }
 
+
+void Matriz :: transposta(Matriz *mat)
+{
+    float ** transMat = new float*[mat->f];
+    for (int i = 0; i < mat->f; i++)
+    {
+        transMat[i] = new float[mat->p];
+    }
+    // os tamanhos p e f trocaram de lugar por causa do conceito de transposta
+
+    for (int i = 0; i< mat->p; i++)
+    {
+        for(int j = 0 ; j < mat->f ; j ++)
+        {
+            transMat[j][i] = mat->mat[i][j];
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------------------
+
 // getters e setters ----------------------------------------------------------------------
 
 float Matriz :: get(int indi, int indj)
