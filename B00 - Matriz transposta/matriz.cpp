@@ -62,11 +62,22 @@ void Matriz :: transposta(Matriz *mat)
     }
     // os tamanhos p e f trocaram de lugar por causa do conceito de transposta
 
+    //transposição:
     for (int i = 0; i< mat->p; i++)
     {
         for(int j = 0 ; j < mat->f ; j ++)
         {
             transMat[j][i] = mat->mat[i][j];
+        }
+    }
+
+    //impressão:
+    for (int i = 0; i< mat->f; i++)
+    {
+        cout <<endl;
+        for(int j = 0 ; j < mat->p ; j ++)
+        {
+            cout << transMat[i][j] << " ";
         }
     }
 }

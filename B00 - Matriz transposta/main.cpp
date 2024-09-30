@@ -28,20 +28,8 @@ int main ()
         }
     }
 
-    //ler indice de linha, indice de coluna e um valor real e alterar a posição correspondente da matriz
-    int linha = 0;
-    int coluna = 0;
-    int valor = 0;
-    cout << "\nEscreva em qual linha e coluna tu quer trocar por qual valor: "<<endl;
-    cout << "linha: ";
-    cin >> linha;
-    cout << "coluna: ";
-    cin >> coluna;
-    cout << "valor: ";
-    cin >> valor;
-    cout << mat.get(linha,coluna)<< endl;
-    mat.set(linha,coluna,valor);
-    cout << mat.get(linha,coluna)<<endl;
+    //imprimeir a transposta 
+    mat.transposta(&mat);
 
     return 0;
 }
