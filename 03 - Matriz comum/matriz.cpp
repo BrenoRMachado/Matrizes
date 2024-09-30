@@ -61,11 +61,21 @@ float Matriz :: get(int indi, int indj)
     if(verificaIndices(indi,indj))
         return mat[indi][indj];
     else
+    {
         cout << "Indice inválido"<<endl;
+        exit(1);
+    }
+    
+
 }
 void Matriz :: set(int indi, int indj, float valor)
 {   
     if(verificaIndices(indi,indj))
         mat[indi][indj] = valor;
+    else
+    {
+        cout << "Indice inválido"<<endl;
+        exit(1);
+    }
 }
 // ----------------------------------------------------------------------------------------
