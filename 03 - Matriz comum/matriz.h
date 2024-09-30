@@ -8,6 +8,9 @@ class Matriz
 
     float ** mat; //ponteiro para o vetor de ponteiros
 
+    //função que verifica os indices
+    bool verificaIndices ( int tamp, int tamf);
+
     public:
 
     // Construtores e destrutor ------------------------------------------
@@ -17,6 +20,13 @@ class Matriz
 
     // tamp = Tamanho do vetor de ponteiros
     // tamf = tamanho dos vetores filhos
+
+    // -------------------------------------------------------------------
+
+    // getters e setters -------------------------------------------------
+
+    float get(int indi, int indj);
+    void set(int indi, int indj, float valor);
 
     // -------------------------------------------------------------------
 

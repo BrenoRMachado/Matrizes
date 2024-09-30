@@ -2,7 +2,7 @@
 #include "matriz.h"
 using namespace std;
 
-
+// construtor e destrutore ----------------------------------------------------------------
 Matriz :: Matriz(int tamp, int tamf)
 {
     //associação das variáveis da classe com os parÂmetros
@@ -40,3 +40,28 @@ Matriz :: ~Matriz()
     }
     delete [] mat;
 }
+// ----------------------------------------------------------------------------------------
+
+// metodos --------------------------------------------------------------------------------
+
+bool Matriz :: verificaIndices(int tamp, int tamf)
+{
+    if(tamp > 0 && tamf > 0)
+        return true;
+    else
+        return false;
+}
+
+// ----------------------------------------------------------------------------------------
+
+// getters e setters ----------------------------------------------------------------------
+
+float Matriz :: get(int indi, int indj)
+{   
+    return mat[indi][indj];
+}
+void Matriz :: set(int indi, int indj, float valor)
+{
+    mat[indi][indj] = valor;
+}
+// ----------------------------------------------------------------------------------------
