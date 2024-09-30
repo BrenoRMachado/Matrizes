@@ -1,0 +1,7 @@
+class MatrizLin
+{
+    private:
+
+    public:
+
+};
